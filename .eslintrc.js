@@ -18,10 +18,10 @@ module.exports = {
     "vue/no-mutating-props": "off",
     "vue/comment-directive": "off",
     "prettier/prettier": "off",
-    "vue/multi-word-component-names": "off",
     quotes: "off",
     "no-dupe-keys": "off",
     "comma-dangle": "off",
     semi: "off",
+    "vue/no-parsing-error": "off",
   },
 };

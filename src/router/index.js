@@ -13,12 +13,29 @@ const routes = [
     component: () => import("@/views/login"),
   },
   {
-    path: "/layout",
-    component: () => import("@/views/layout"),
+    path: "/dashboard",
+    component: () => import("@/views/dashboard"),
+    redirect: "/main",
     children: [
       {
-        path: "/dashboard",
-        component: () => import("@/views/dashboard"),
+        path: "/main",
+        component: () => import("@/views/dashboard/main"),
+      },
+      {
+        path: "/depot",
+        component: () => import("@/views/basis/depot"),
+      },
+      {
+        path: "/addDepot",
+        component: () => import("@/views/basis/components/addDepot"),
+      },
+      {
+        path: "/kuqu",
+        component: () => import("@/views/basis/Kuqu/kuqu"),
+      },
+      {
+        path: "/location",
+        component: () => import("@/views/basis/location"),
       },
     ],
   },
